@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DarkWave Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="wave-mark" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="brand-text"><span>DARK</span><strong>WAVE</strong></div>
+      </div>
+
+      <div class="steps">
+        <button class="step active" data-step="0">
+          <span class="step-circle">1</span>
+          <span><strong>Your Details</strong><small>Please provide your name</small></span>
+        </button>
+        <button class="step" data-step="1">
+          <span class="step-circle">2</span>
+          <span><strong>Create Password</strong><small>Choose secure password</small></span>
+        </button>
+        <button class="step" data-step="2">
+          <span class="step-circle">3</span>
+          <span><strong>Finishing Up</strong><small>Start using DarkWave</small></span>
+        </button>
+      </div>
+
+      <p class="copyright">© Dark Wave 2022</p>
+    </aside>
+
+    <section class="content">
+      <div class="progress-dots">
+        <span class="dot active"></span><span class="dot"></span><span class="dot"></span>
+      </div>
+
+      <form class="form-card">
+        <div class="icon-badge">
+          <svg viewBox="0 0 64 64" fill="none">
+            <rect x="15" y="8" width="34" height="40" rx="3" stroke="currentColor" stroke-width="5"/>
+            <circle cx="32" cy="24" r="7" stroke="currentColor" stroke-width="5"/>
+            <path d="M16 48c6.5-7.5 25.5-7.5 32 0" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+            <path d="M21 49l11 7 11-7" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+
+        <div class="form-step active" data-panel="0">
+          <h1>Your Details</h1>
+          <p>Please provide us with your real name</p>
+          <label><span>First Name</span><input type="text" placeholder="First name"></label>
+          <label><span>Last Name</span><input type="text" placeholder="Last name"></label>
+          <label><span>Email Address</span><input type="email" value="roberthawkes@example.com"></label>
+        </div>
+
+        <div class="form-step" data-panel="1">
+          <h1>Create Password</h1>
+          <p>Choose a secure password for your account</p>
+          <label><span>Password</span><input type="password" placeholder="Password"></label>
+          <label><span>Confirm Password</span><input type="password" placeholder="Confirm password"></label>
+        </div>
+
+        <div class="form-step" data-panel="2">
+          <h1>Finishing Up</h1>
+          <p>Review your details and start using DarkWave</p>
+          <div class="summary-box"><strong>Almost done</strong><span>Click finish to complete your setup.</span></div>
+        </div>
+
+        <button class="next-button" type="button">Next step</button>
+      </form>
+
+      <p class="hint">All details can be changed later</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
